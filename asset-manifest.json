@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/count-tips/static/css/main.7cda0caf.css",
+    "main.js": "/count-tips/static/js/main.46795e59.js",
+    "index.html": "/count-tips/index.html",
+    "main.7cda0caf.css.map": "/count-tips/static/css/main.7cda0caf.css.map",
+    "main.46795e59.js.map": "/count-tips/static/js/main.46795e59.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cda0caf.css",
+    "static/js/main.46795e59.js"
+  ]
+}

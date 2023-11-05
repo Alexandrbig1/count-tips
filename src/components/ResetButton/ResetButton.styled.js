@@ -9,10 +9,15 @@ export const Wrapper = styled.div`
 `;
 
 export const ResetBtn = styled.button`
-  padding: 4px 12px;
+  padding: 0.8rem 2.4rem;
   border: none;
   outline: none;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #da1212;
   border-radius: 8px;
+  color: ${(p) => p.theme.colors.white};
+  transition: 0.3s;
+  &:hover {
+    background-color: #d2001a;
+  }
 `;

@@ -1,13 +1,14 @@
-import { InputWrapper } from "../InputField/Inputfield.styled";
-import { TotalSpan, TotalTitle } from "./TotalAmount.styled";
+import { TotalSpan, TotalTitle, Wrap } from "./TotalAmount.styled";
 
-export default function TotalAmount({ tip, price }) {
+export default function TotalAmount({ tip, price, totalPrice }) {
   return (
-    <InputWrapper>
-      <TotalTitle>You pay ${price + tip} </TotalTitle>
+    <Wrap>
+      <TotalTitle>
+        <TotalSpan>You pay:</TotalSpan> ${totalPrice.toFixed(2)}{" "}
+      </TotalTitle>
       <TotalSpan>
         (${price} + ${tip} tip)
       </TotalSpan>
-    </InputWrapper>
+    </Wrap>
   );
 }

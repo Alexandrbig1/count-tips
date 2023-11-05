@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-color: ${(p) => p.theme.colors.white};
+  background-color: ${(p) => p.theme.colors.bgColor};
   }
 
   p {
@@ -40,6 +40,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h2 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h3 {
     margin: 0;
     padding: 0;
   }

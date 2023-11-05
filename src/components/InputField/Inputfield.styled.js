@@ -1,16 +1,13 @@
 import styled from "styled-components";
 
 export const InputWrapper = styled.div`
-  width: 52rem;
   padding: 2.4rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.2rem;
+  flex-direction: column;
 `;
 
 export const InputTitle = styled.h3`
-  color: #050505;
+  color: ${(p) => p.theme.colors.textColor};
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -24,4 +21,11 @@ export const Input = styled.input`
   outline: none;
   cursor: pointer;
   width: 20rem;
+  background-color: ${(p) => p.theme.colors.inputColor};
+  color: ${(p) => p.theme.colors.textColor};
+  width: 24rem;
+
+  &::placeholder {
+    color: ${(p) => p.theme.colors.textColor};
+  }
 `;

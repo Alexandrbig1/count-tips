@@ -7,4 +7,7 @@ export const Select = styled.select`
   outline: none;
   cursor: pointer;
   width: 20rem;
+  background-color: ${(p) => p.theme.colors.inputColor};
+  color: ${(p) => p.theme.colors.textColor};
+  width: 24rem;
 `;
